@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tri Jasa Teknik</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Edu+TAS+Beginner:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="lib/animate/animate.min.css" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid header-top">
+      <div class="container d-flex align-items-center">
+        <div class="d-flex align-items-center h-100">
+          <a href="#" class="navbar-brand" style="height: 125px">
+            <h1 class="text-primary mb-0">TRI JASA TEKNIK</h1>
+            <!-- <img src="img/logo.png" alt="Logo"> -->
+          </a>
+        </div>
+        <div class="w-100 h-100">
+          <div class="topbar px-0 py-2 d-none d-lg-block" style="height: 45px">
+            <div class="row gx-0 align-items-center">
+              <div class="col-lg-12 text-center text-lg-center mb-lg-0">
+                <div class="d-flex flex-wrap">
+                  <div class="border-end border-primary pe-3">
+                    <a href="#" class="text-muted small"
+                      ><i class="fas fa-map-marker-alt text-primary me-2"></i>
+                      Jl.H.Suhaemi No.70 RT.001/04 Duren Mekar Bojongsari Depok
+                    </a>
+                  </div>
+                  <div class="ps-3">
+                    <a
+                      href="mailto:damanrabupahing@gmail.com"
+                      class="text-muted small"
+                      ><i class="fas fa-envelope text-primary me-2"></i
+                      > damanrabupahing@gmail.com</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-flex justify-content-end">
+                  <div class="d-flex border-end border-primary pe-3">
+                    <a class="btn p-0 text-primary me-3" href="#"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a class="btn p-0 text-primary me-3" href="#"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a class="btn p-0 text-primary me-3" href="#"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                    <a class="btn p-0 text-primary me-0" href="#"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <div class="nav-bar px-0 py-lg-0" style="height: 80px">
+            <nav
+              class="navbar navbar-expand-lg navbar-light d-flex justify-content-lg-end"
+            >
+              <a href="#" class="navbar-brand-2">
+                <h1 class="text-primary mb-0 fs-2">TRI JASA TEKNIK</h1>
+                <!-- <img src="img/logo.png" alt="Logo"> -->
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse"
+              >
+                <span class="fa fa-bars"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-0 mx-lg-auto bg-white">
+                  <a href="#" class="nav-item nav-link active">Home</a>
+                  <a href="#tentang" class="nav-item nav-link">Tentang Kami</a>
+                  <a href="#pelayanan" class="nav-item nav-link"
+                    >Pelayanan Kami</a
+                  >
+                  <a href="#testimoni" class="nav-item nav-link">Testimoni</a>
+                  <a href="#kontak" class="nav-item nav-link">Kontak</a>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+    <!-- Modal Search Start -->
+    <div
+      class="modal fade"
+      id="searchModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content rounded-0">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Search by keyword
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body d-flex align-items-center bg-primary">
+            <div class="input-group w-75 mx-auto d-flex">
+              <input
+                type="search"
+                class="form-control p-3"
+                placeholder="keywords"
+                aria-describedby="search-icon-1"
+              />
+              <span
+                id="search-icon-1"
+                class="btn bg-light border nput-group-text p-3"
+                ><i class="fa fa-search"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Search End -->
+
+    <!-- Carousel Start -->
+    <div class="header-carousel owl-carousel overflow-hidden">
+      <div class="header-carousel-item hero-section">
+        <div class="hero-bg-half-1"></div>
+        <div class="hero-shape-1"></div>
+        <div class="carousel-caption">
+          <div class="container">
+            <div class="row g-4 align-items-center">
+              <div class="col-lg-7 animated fadeInLeft">
+                <div class="text-sm-center text-md-start">
+                  <h4 class="text-white text-uppercase fw-bold mb-4">
+                    TRI JASA TEKNIK
+                  </h4>
+                  <h1 class="display-2 text-white mb-4">
+                    Solusi Anda Untuk Mengatasi Masalah Air
+                    dan Listrik Rumah atau Kantor
+                  </h1>
+                  <div
+                    class="d-flex justify-content-center justify-content-md-start flex-shrink-0 mb-4"
+                  >
+                    <a
+                      class="btn btn-primary py-3 px-4 px-md-5 ms-2"
+                      href="https://wa.me/+6285697167083"
+                      >Whatsapp</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-carousel-item hero-section">
+        <div class="hero-bg-half-2"></div>
+        <div class="hero-shape-2"></div>
+        <div class="carousel-caption">
+          <div class="container">
+            <div class="row g-4 align-items-center">
+              <div class="col-lg-7 animated fadeInLeft">
+                <div class="text-sm-center text-md-start">
+                  <h4 class="text-white text-uppercase fw-bold mb-4">
+                    TRI JASA TEKNIK
+                  </h4>
+                  <h1 class="display-2 text-white mb-4">
+                    Ditangani oleh teknisi berpengalaman
+                    dan bergaransi. Area layanan JABODETABEK
+                  </h1>
+                  <div
+                    class="d-flex justify-content-center justify-content-md-start flex-shrink-0 mb-4"
+                  >
+                    <a
+                      class="btn btn-primary py-3 px-4 px-md-5 ms-2"
+                      href="https://wa.me/+6285697167083"
+                      >Whatsapp</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- About Start -->
+    <div class="container-fluid about py-5" id="tentang">
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-7 wow fadeInLeft" data-wow-delay="0.2s">
+            <div class="h-100">
+              <h4 class="text-primary">Tentang Kami</h4>
+              <h1 class="display-4 mb-4"></h1>
+              <p class="mb-4">
+                TRI JASA TEKNIK berlokasi di Jakarta. Area layanan JABODETABEK
+                menangani pekerjaan:
+                <li>Cuci dan kuras toren air/groundtank</li>
+                <li>
+                  Detox Pipa mengatasi saluran mampet menggunakan mesin Hydro
+                  Jetting
+                </li>
+                <li>Penambalan toren bocor</li>
+                <li>
+                  Pemasangan filter air, radar air, mesin pendorong/booster pump
+                  dan pengecatan toren
+                </li>
+                <li>Pengeboran sumur baru atau tambah kedalaman</li>
+                <li>Service dan cuci AC - Bongkar Pasang AC</li>
+                <li>Instalasi baru atau perbaikan untuk listrik/air</li>
+                <br />
+
+                untuk perumahan, perkantoran, gedung bertingkat, pabrik,
+                yayasan, masjid dll dan pelayanan kami menjangkau kota Tangerang
+                dan sekitarnya. Dikerjakan oleh tenaga pengalaman dan hasil
+                kerja bergaransi.
+              </p>
+              <div class="text-dark mb-4">
+                <p class="fs-5">
+                  <span class="fa fa-check text-primary me-2"></span> Teknisi
+                  Berpengalaman
+                </p>
+                <p class="fs-5">
+                  <span class="fa fa-check text-primary me-2"></span>
+                  Harga Terjangkau
+                </p>
+                <p class="fs-5">
+                  <span class="fa fa-check text-primary me-2"></span> Bergaransi
+                </p>
+              </div>
+              <a class="btn btn-primary py-3 px-4 px-md-5 ms-2" href="#"
+                >Mulai Rp 100.000</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-5 wow fadeInRight" data-wow-delay="0.2s">
+            <div class="position-relative h-100">
+              <img
+                src="img/3.jpg"
+                class="img-fluid w-100 h-100"
+                style="object-fit: cover"
+                alt=""
+              />
+              <div class="bg-white">
+                <div
+                  class="position-absolute pt-3 bg-white"
+                  style="width: 50%; left: 0; bottom: 0"
+                >
+                  <div class="bg-primary p-4">
+                    <h4 class="display-2 mb-0">5+</h4>
+                    <p class="text-white fs-5 mb-0">Tahun Berdiri</p>
+                  </div>
+                </div>
+                <div
+                  class="position-absolute p-3 bg-white pb-0 pe-0"
+                  style="width: 50%; bottom: 0; right: 0"
+                >
+                  <img src="img/4.jpg" class="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Banner Start -->
+    <div class="container-fluid banner py-5 wow zoomIn" data-wow-delay="0.2s">
+      <div class="banner-design-1"></div>
+      <div class="banner-design-2"></div>
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-8">
+            <div class="">
+              <h4 class="text-white">Mengapa Memilih Kami ?</h4>
+              <h1 class="display-4 text-white mb-0">
+                Kami berpengalaman, telah banyak menangani dan perawatan toren
+                air, AC, intalasi air/listrik, saluran pipa mampet di berbagai
+                perumahan dan perkantoran seJabodetabek. Kami memberikan
+                jaminan, gagal anda tidak perlu membayar jasa kami.
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Banner End -->
+
+    <!-- Services Start -->
+    <div class="container-fluid service py-5" id="pelayanan">
+      <div class="container py-5">
+        <div
+          class="d-flex flex-column mx-auto text-center mb-5 wow fadeInUp"
+          data-wow-delay="0.2s"
+          style="max-width: 800px"
+        >
+          <h4 class="text-primary">Pelayanan Kami</h4>
+          <h1 class="display-4 mb-4">Memberikan Pelayan Terbaik</h1>
+          <p class="mb-0">
+            Dengan ditangani teknisi berpengalaman dan bersertifikat kami
+            memberikan garansi disetiap pakerjaan.
+          </p>
+        </div>
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-3 wow fadeInLeft" data-wow-delay="0.2s">
+            <ul class="nav">
+              <li class="nav-item me-lg-0 mb-4">
+                <a
+                  class="py-3 px-5 active"
+                  data-bs-toggle="pill"
+                  href="#ServiceTab-1"
+                >
+                  <span>Cuci Toren</span>
+                </a>
+              </li>
+              <li class="nav-item me-lg-0 mb-4">
+                <a class="py-3 px-5" data-bs-toggle="pill" href="#ServiceTab-2">
+                  <span>Service Ac</span>
+                </a>
+              </li>
+              <li class="nav-item me-lg-0 mb-4 mb-lg-0">
+                <a class="py-3 px-5" data-bs-toggle="pill" href="#ServiceTab-3">
+                  <span>Instalasi Listrik</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 wow fadeInRight" data-wow-delay="0.3s">
+            <div class="tab-content">
+              <div id="ServiceTab-1" class="tab-pane fade show p-0 active">
+                <div class="service-carousel owl-carousel">
+                  <div class="service-item">
+                    <img src="img/5.jpg" class="img-fluid w-100" alt="" />
+                    <!-- <div class="border border-top-0 p-4">
+                      <h4 class="mb-3">Brite Spark Services</h4>
+                      <p class="mb-4">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Exercitationem, beatae ex. Id esse autem ratione
+                        vero cupiditate tempora recusandae est!
+                      </p>
+                      <a class="btn btn-primary py-2 px-4" href="#"
+                        >Read More</a
+                      >
+                    </div> -->
+                  </div>
+                  <div class="service-item">
+                    <img src="img/6.jpg" class="img-fluid w-100" alt="" />
+                    <!-- <div class="border border-top-0 p-4">
+                      <h4 class="mb-3">Energy Ease Packages</h4>
+                      <p class="mb-4">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Exercitationem, beatae ex. Id esse autem ratione
+                        vero cupiditate tempora recusandae est!
+                      </p>
+                      <a class="btn btn-primary py-2 px-4" href="#"
+                        >Read More</a
+                      >
+                    </div> -->
+                  </div>
+                  <div class="service-item">
+                    <img src="img/5 (2).jpg" class="img-fluid w-100" alt="" />
+                    <!-- <div class="border border-top-0 p-4">
+                      <h4 class="mb-3">Energy Ease Packages</h4>
+                      <p class="mb-4">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Exercitationem, beatae ex. Id esse autem ratione
+                        vero cupiditate tempora recusandae est!
+                      </p>
+                      <a class="btn btn-primary py-2 px-4" href="#"
+                        >Read More</a
+                      >
+                    </div> -->
+                  </div>
+                  <div class="service-item">
+                    <img src="img/6 (2).jpg" class="img-fluid w-100" alt="" />
+                    <!-- <div class="border border-top-0 p-4">
+                      <h4 class="mb-3">Energy Ease Packages</h4>
+                      <p class="mb-4">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Exercitationem, beatae ex. Id esse autem ratione
+                        vero cupiditate tempora recusandae est!
+                      </p>
+                      <a class="btn btn-primary py-2 px-4" href="#"
+                        >Read More</a
+                      >
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+              <div id="ServiceTab-2" class="tab-pane fade show p-0">
+                <div class="service-carousel owl-carousel">
+                  <div class="service-item">
+                    <img src="img/7.jpg" class="img-fluid w-100" alt="" />
+                  </div>
+                  <div class="service-item">
+                    <img src="img/8.jpg" class="img-fluid w-100" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div id="ServiceTab-3" class="tab-pane fade show p-0">
+                <div class="service-carousel owl-carousel">
+                  <div class="service-item">
+                    <img src="img/9.jpeg" class="img-fluid w-100" alt="" />
+                  </div>
+                  <div class="service-item">
+                    <img src="img/10.jpeg" class="img-fluid w-100" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Services End -->
+
+    <!-- Projects Start -->
+    <div class="container-fluid projects bg-light py-5">
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.2s">
+            <div>
+              <h4 class="text-primary">Klien kami</h4>
+              <h1 class="display-4 mb-4">Kami menangani banyak pelanggan</h1>
+              <p class="mb-5">
+                Kepuasan pelanggan adalah prioritas utama kami dengan
+                mengerjakan setiap perbaikan dengan cermat sesuai SOP.
+              </p>
+              <ul class="nav">
+                <li class="nav-item bg-white mb-4 w-100">
+                  <a
+                    class="d-flex align-items-center h4 mb-0 p-3 active"
+                    data-bs-toggle="pill"
+                    href="#ProjectsTab-1"
+                  >
+                    <span>Perumahan</span>
+                  </a>
+                </li>
+                <li class="nav-item bg-white mb-4 w-100">
+                  <a
+                    class="d-flex align-items-center h4 mb-0 p-3"
+                    data-bs-toggle="pill"
+                    href="#ProjectsTab-2"
+                  >
+                    <span>Perkantoran</span>
+                  </a>
+                </li>
+                <li class="nav-item bg-white mb-4 w-100">
+                  <a
+                    class="d-flex align-items-center h4 mb-0 p-3"
+                    data-bs-toggle="pill"
+                    href="#ProjectsTab-3"
+                  >
+                    <span>Pabrik</span>
+                  </a>
+                </li>
+                <li class="nav-item bg-white mb-4 w-100">
+                  <a
+                    class="d-flex align-items-center h4 mb-0 p-3"
+                    data-bs-toggle="pill"
+                    href="#ProjectsTab-4"
+                  >
+                    <span>Yayasan</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.2s">
+            <div class="tab-content">
+              <div id="ProjectsTab-1" class="tab-pane fade show p-0 active">
+                <div class="projects-item">
+                  <img src="img/5.jpg" class="img-fluid w-100" alt="" />
+                </div>
+              </div>
+              <div id="ProjectsTab-2" class="tab-pane fade show p-0">
+                <div class="projects-item">
+                  <img
+                    src="img/industrial-2.jpg"
+                    class="img-fluid w-100"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div id="ProjectsTab-3" class="tab-pane fade show p-0">
+                <div class="projects-item">
+                  <img
+                    src="img/commercial-2.jpg"
+                    class="img-fluid w-100"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div id="ProjectsTab-4" class="tab-pane fade show p-0">
+                <div class="projects-item">
+                  <img
+                    src="img/industrial-4.jpg"
+                    class="img-fluid w-100"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Projects End -->
+
+    <!-- Blog Start -->
+
+    <!-- Blog End -->
+
+    <!-- Team Start -->
+
+    <!-- Team End -->
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid testimonial bg-primary py-5" id="testimoni">
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-6 col-xl-5 wow fadeInUp" data-wow-delay="0.2s">
+            <h4 class="text-primary">Testimonia</h4>
+            <h1 class="display-4 text-white mb-4">Apa Kata Pelanggan ?</h1>
+          </div>
+          <div class="col-lg-6 col-xl-7 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="owl-carousel testimonial-carousel">
+              <div class="testimonial-item">
+                <div class="testimonial-quote">
+                  <i class="fa fa-quote-right fa-2x"></i>
+                </div>
+                <div class="testimonial-inner p-4">
+                  <img src="img/testimonial-1.jpg" class="img-fluid" alt="" />
+                  <div class="ms-4">
+                    <h4>Naufal</h4>
+                    <p>IT</p>
+                    <div class="d-flex text-primary">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="customer-text p-4">
+                  <p class="mb-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quam soluta neque ab repudiandae reprehenderit ipsum eos
+                    cumque esse repellendus impedit.
+                  </p>
+                </div>
+              </div>
+              <div class="testimonial-item">
+                <div class="testimonial-quote">
+                  <i class="fa fa-quote-right fa-2x"></i>
+                </div>
+                <div class="testimonial-inner p-4">
+                  <img src="img/testimonial-2.jpg" class="img-fluid" alt="" />
+                  <div class="ms-4">
+                    <h4>Hany</h4>
+                    <p>HRD</p>
+                    <div class="d-flex text-primary">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="customer-text p-4">
+                  <p class="mb-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quam soluta neque ab repudiandae reprehenderit ipsum eos
+                    cumque esse repellendus impedit.
+                  </p>
+                </div>
+              </div>
+              <div class="testimonial-item">
+                <div class="testimonial-quote">
+                  <i class="fa fa-quote-right fa-2x"></i>
+                </div>
+                <div class="testimonial-inner p-4">
+                  <img src="img/testimonial-3.jpg" class="img-fluid" alt="" />
+                  <div class="ms-4">
+                    <h4>Wisnu</h4>
+                    <p>Manager</p>
+                    <div class="d-flex text-primary">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="customer-text p-4">
+                  <p class="mb-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quam soluta neque ab repudiandae reprehenderit ipsum eos
+                    cumque esse repellendus impedit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- FAQ Start -->
+
+    <!-- FAQ End -->
+
+    <!-- Footer Start -->
+    <div
+      class="container-fluid footer bg-dark py-5 wow fadeIn"
+      data-wow-delay="0.2s"
+    >
+      <div class="container py-5" id="kontak">
+        <div class="row g-5">
+          <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="footer-item d-flex flex-column">
+              <div class="footer-item">
+                <h3 class="text-white mb-4">TRI JASA TEKNIK</h3>
+                <p class="mb-3">
+                  Spesialis perawatan toren air dan perbaikan semua kerusakan ac
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="footer-item d-flex flex-column">
+              <h4 class="text-white mb-4">Links</h4>
+              <a href="#"> Home</a>
+              <a href="#tentang"> Tentang Kami</a>
+              <a href="#pelayanan"> Pelayanan Kami</a>
+              <a href="#testimoni"> Testimoni</a>
+              <a href="https://wa.me/+6285697167083"> Kontak</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="footer-item d-flex flex-column">
+              <h4 class="text-white mb-4">Pelayanan Kami</h4>
+              <a href="https://wa.me/+62895610006090"> Cuci Toren</a>
+              <a href="https://wa.me/+62895610006090"> Service ac</a>
+              <a href="https://wa.me/+62895610006090"> Instalasi Listrik</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="footer-item d-flex flex-column">
+              <h4 class="text-white mb-4">Kontak</h4>
+              <a href="https://wa.me/+6285697167083"
+                ><i class="fa fa-map-marker-alt text-primary me-2"></i>
+                Jl.H.Suhaemi No.70 RT.001/04 Duren Mekar Bojongsari Depok
+              </a>
+              <a href="mailto:info@example.com"
+                ><i class="fas fa-envelope text-primary me-2"></i>
+                info@example.com</a
+              >
+              <a href="https://wa.me/+6285697167083"
+                ><i class="fas fa-phone text-primary me-2"></i> +62 856 9716 7083</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-md-0">
+            <span class="text-body"
+              ><a href="https://wa.me/+62895610006090" class="text-white"
+                ><i class="fas fa-copyright text-light me-2"></i>Tri Jasa
+                Teknik | 2024</a
+              >, All right reserved.</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square back-to-top"
+      ><i class="fa fa-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
